@@ -1,0 +1,49 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Hasib\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\Hasib\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Hasib\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Hasib\AppData\Local\Microsoft\WindowsApps;C:\Users\Hasib\AppData\Roaming\npm;C:\Users\Hasib\AppData\Local\Programs\Microsoft VS Code\bin;C:\adb;C:\Users\Hasib\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Hasib\AppData\Local\Programs\Python\Python37;C:\Users\Hasib\AppData\Local\Microsoft\WindowsApps;C:\Users\Hasib\AppData\Roaming\npm;C:\Users\Hasib\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ENETUNREACH 192.30.255.112:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~38.0.8",
+      "expo-status-bar": "^1.0.2",
+      "react": "~16.11.0",
+      "react-dom": "~16.11.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
+      "react-native-web": "~0.11.7"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.8.6",
+      "babel-preset-expo": "~8.1.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
