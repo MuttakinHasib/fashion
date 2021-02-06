@@ -9,5 +9,7 @@ const RoundedIconButton = ({ onPress, ...props }) => {
     </TouchableOpacity>
   );
 };
-
+RoundedIconButton.defaultProps = {
+  iconRatio: 0.7,
+};
 export default RoundedIconButton;

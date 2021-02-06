@@ -37,52 +37,50 @@ const Signup = ({ navigation }) => {
   );
   return (
     <Container pattern={1} {...{ footer }}>
-      <Box padding='xl'>
-        <Text variant='title1' textAlign='center' marginBottom='l'>
-          Create an account
-        </Text>
-        <Text variant='body' textAlign='center' marginBottom='l'>
-          Let's us know what your name, email and your password
-        </Text>
-        <Box>
-          <Box marginBottom='m'>
-            <TextInput
-              icon='user'
-              placeholder='Enter your Name'
-              onBlur={handleBlur('name')}
-              onChangeText={handleChange('name')}
-              error={errors?.name}
-              touched={touched?.name}
-            />
-          </Box>
-          <Box marginBottom='m'>
-            <TextInput
-              icon='mail'
-              placeholder='Enter your Email'
-              onBlur={handleBlur('email')}
-              onChangeText={handleChange('email')}
-              error={errors?.email}
-              touched={touched?.email}
-            />
-          </Box>
-          <Box marginBottom='m'>
-            <TextInput
-              icon='lock'
-              placeholder='Enter your Password'
-              onBlur={handleBlur('password')}
-              onChangeText={handleChange('password')}
-              error={errors?.password}
-              touched={touched?.password}
-              secureTextEntry
-            />
-          </Box>
-          <Box marginTop='m' alignItems='center'>
-            <Button
-              variant='primary'
-              label='Create your account'
-              onPress={handleSubmit}
-            />
-          </Box>
+      <Text variant='title1' textAlign='center' marginBottom='l'>
+        Create an account
+      </Text>
+      <Text variant='body' textAlign='center' marginBottom='l'>
+        Let's us know what your name, email and your password
+      </Text>
+      <Box>
+        <Box marginBottom='m'>
+          <TextInput
+            icon='user'
+            placeholder='Enter your Name'
+            onBlur={handleBlur('name')}
+            onChangeText={handleChange('name')}
+            error={errors?.name}
+            touched={touched?.name}
+          />
+        </Box>
+        <Box marginBottom='m'>
+          <TextInput
+            icon='mail'
+            placeholder='Enter your Email'
+            onBlur={handleBlur('email')}
+            onChangeText={handleChange('email')}
+            error={errors?.email}
+            touched={touched?.email}
+          />
+        </Box>
+        <Box marginBottom='m'>
+          <TextInput
+            icon='lock'
+            placeholder='Enter your Password'
+            onBlur={handleBlur('password')}
+            onChangeText={handleChange('password')}
+            error={errors?.password}
+            touched={touched?.password}
+            secureTextEntry
+          />
+        </Box>
+        <Box marginTop='m' alignItems='center'>
+          <Button
+            variant='primary'
+            label='Create your account'
+            onPress={handleSubmit}
+          />
         </Box>
       </Box>
     </Container>

@@ -29,7 +29,7 @@ const Login = ({ navigation }) => {
   } = useFormik({
     initialValues: { email: '', password: '', rememberMe: true },
     validationSchema: LoginSchema,
-    onSubmit: e => console.log(e),
+    onSubmit: e => navigation.navigate('Home'),
   });
 
   const footer = (
@@ -41,60 +41,58 @@ const Login = ({ navigation }) => {
   );
   return (
     <Container pattern={0} {...{ footer }}>
-      <Box padding='xl'>
-        <Text variant='title1' textAlign='center' marginBottom='l'>
-          Welcome Back
-        </Text>
-        <Text variant='body' textAlign='center' marginBottom='l'>
-          Use your credentials below and login to your account
-        </Text>
-        <Box>
-          <Box marginBottom='m'>
-            <TextInput
-              icon='mail'
-              placeholder='Enter your Email'
-              onBlur={handleBlur('email')}
-              onChangeText={handleChange('email')}
-              error={errors?.email}
-              touched={touched?.email}
-            />
-          </Box>
-          <Box marginBottom='m'>
-            <TextInput
-              icon='lock'
-              placeholder='Enter your Password'
-              onBlur={handleBlur('password')}
-              onChangeText={handleChange('password')}
-              error={errors?.password}
-              touched={touched?.password}
-              secureTextEntry
-            />
-          </Box>
-          <Box
-            flexDirection='row'
-            justifyContent='space-between'
-            alignItems='center'
-            marginBottom='m'
-          >
-            <CheckBox
-              label='Remember me'
-              checked={values.rememberMe}
-              onChange={() => setFieldValue('rememberMe', !values.rememberMe)}
-            />
-            <Link
-              label='Forget password?'
-              variant='button'
-              color='success'
-              onPress={() => navigation.navigate('ForgotPassword')}
-            />
-          </Box>
-          <Box marginTop='m' alignItems='center'>
-            <Button
-              variant='primary'
-              label='Log into your account'
-              onPress={handleSubmit}
-            />
-          </Box>
+      <Text variant='title1' textAlign='center' marginBottom='l'>
+        Welcome Back
+      </Text>
+      <Text variant='body' textAlign='center' marginBottom='l'>
+        Use your credentials below and login to your account
+      </Text>
+      <Box>
+        <Box marginBottom='m'>
+          <TextInput
+            icon='mail'
+            placeholder='Enter your Email'
+            onBlur={handleBlur('email')}
+            onChangeText={handleChange('email')}
+            error={errors?.email}
+            touched={touched?.email}
+          />
+        </Box>
+        <Box marginBottom='m'>
+          <TextInput
+            icon='lock'
+            placeholder='Enter your Password'
+            onBlur={handleBlur('password')}
+            onChangeText={handleChange('password')}
+            error={errors?.password}
+            touched={touched?.password}
+            secureTextEntry
+          />
+        </Box>
+        <Box
+          flexDirection='row'
+          justifyContent='space-between'
+          alignItems='center'
+          marginBottom='m'
+        >
+          <CheckBox
+            label='Remember me'
+            checked={values.rememberMe}
+            onChange={() => setFieldValue('rememberMe', !values.rememberMe)}
+          />
+          <Link
+            label='Forget password?'
+            variant='button'
+            color='success'
+            onPress={() => navigation.navigate('ForgotPassword')}
+          />
+        </Box>
+        <Box marginTop='m' alignItems='center'>
+          <Button
+            variant='primary'
+            label='Log into your account'
+            onPress={handleSubmit}
+          />
         </Box>
       </Box>
     </Container>

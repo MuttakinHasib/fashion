@@ -27,10 +27,7 @@ export default App = () => (
             name='Authentication'
             component={AuthenticationNavigator}
           />
-          <AppStack.Screen
-            name='Home'
-            component={HomeNavigator}
-          />
+          <AppStack.Screen name='Home' component={HomeNavigator} />
         </AppStack.Navigator>
       </SafeAreaProvider>
     </LoadAssets>

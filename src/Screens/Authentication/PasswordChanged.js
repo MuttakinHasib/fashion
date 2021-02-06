@@ -21,28 +21,26 @@ const PasswordChanged = ({ navigation }) => {
   );
   return (
     <Container pattern={0} {...{ footer }}>
-      <Box padding='l' flex={1} justifyContent='center' alignItems='center'>
-        <Box marginBottom='xl'>
-          <RoundedIcon
-            name='check'
-            size={SIZE - 5}
-            color='success'
-            backgroundColor='successLight'
-          />
-        </Box>
-        <Text variant='title1' textAlign='center' marginBottom='l'>
-          Your password was successfully changed
-        </Text>
-        <Text variant='body' textAlign='center'>
-          Close this window and login again
-        </Text>
-        <Box marginTop='m' alignItems='center'>
-          <Button
-            variant='primary'
-            label='Login again'
-            onPress={() => navigation.navigate('Login')}
-          />
-        </Box>
+      <Box marginBottom='xl' alignItems='center'>
+        <RoundedIcon
+          name='check'
+          size={SIZE - 5}
+          color='success'
+          backgroundColor='successLight'
+        />
+      </Box>
+      <Text variant='title1' textAlign='center' marginBottom='l'>
+        Your password was successfully changed
+      </Text>
+      <Text variant='body' textAlign='center'>
+        Close this window and login again
+      </Text>
+      <Box marginTop='m' alignItems='center'>
+        <Button
+          variant='primary'
+          label='Login again'
+          onPress={() => navigation.navigate('Login')}
+        />
       </Box>
     </Container>
   );

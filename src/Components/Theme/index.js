@@ -23,6 +23,9 @@ export const theme = createTheme({
     danger: '#f36',
     secondary: '#0c0d34',
     success: '#0ECD9D',
+    yellow: '#fdcb6e',
+    pink: '#fd79a8',
+    violet: '#5352ed',
     successLight: '#e7f9f7',
     text: 'rgba(12,13,52,0.7)',
     white: '#fff',
@@ -73,6 +76,12 @@ export const theme = createTheme({
       fontSize: 15,
       fontFamily: 'SFP-Regular',
       color: 'text',
+    },
+    header: {
+      fontSize: 12,
+      lineHeight: 24,
+      fontFamily: 'SFP-SemiBold',
+      color: 'secondary',
     },
   },
 });
